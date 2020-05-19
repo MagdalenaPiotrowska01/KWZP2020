@@ -30,26 +30,42 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ObslugaZamowien));
             this.btnAddWorkersDeliverers = new System.Windows.Forms.Button();
+            this.btnOdbior = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnAddWorkersDeliverers
             // 
             this.btnAddWorkersDeliverers.BackColor = System.Drawing.SystemColors.Control;
-            this.btnAddWorkersDeliverers.Location = new System.Drawing.Point(12, 12);
+            this.btnAddWorkersDeliverers.Location = new System.Drawing.Point(16, 15);
+            this.btnAddWorkersDeliverers.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnAddWorkersDeliverers.Name = "btnAddWorkersDeliverers";
-            this.btnAddWorkersDeliverers.Size = new System.Drawing.Size(256, 111);
+            this.btnAddWorkersDeliverers.Size = new System.Drawing.Size(341, 137);
             this.btnAddWorkersDeliverers.TabIndex = 1;
             this.btnAddWorkersDeliverers.Text = "Przypisz pracowników i kurierów";
             this.btnAddWorkersDeliverers.UseVisualStyleBackColor = false;
             this.btnAddWorkersDeliverers.Click += new System.EventHandler(this.btnAddWorkersDeliverers_Click);
             // 
+            // btnOdbior
+            // 
+            this.btnOdbior.BackColor = System.Drawing.SystemColors.Control;
+            this.btnOdbior.Location = new System.Drawing.Point(16, 172);
+            this.btnOdbior.Margin = new System.Windows.Forms.Padding(4);
+            this.btnOdbior.Name = "btnOdbior";
+            this.btnOdbior.Size = new System.Drawing.Size(341, 137);
+            this.btnOdbior.TabIndex = 2;
+            this.btnOdbior.Text = "Odbiór zamowienia z produkcji";
+            this.btnOdbior.UseVisualStyleBackColor = false;
+            this.btnOdbior.Click += new System.EventHandler(this.btnOdbior_Click);
+            // 
             // ObslugaZamowien
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.Controls.Add(this.btnOdbior);
             this.Controls.Add(this.btnAddWorkersDeliverers);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "ObslugaZamowien";
             this.Text = "ObslugaZamowien";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.ObslugaZamowien_FormClosed);
@@ -60,5 +76,6 @@
         #endregion
 
         private System.Windows.Forms.Button btnAddWorkersDeliverers;
+        private System.Windows.Forms.Button btnOdbior;
     }
 }

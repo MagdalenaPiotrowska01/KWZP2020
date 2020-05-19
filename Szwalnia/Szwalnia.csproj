@@ -332,6 +332,12 @@
     <Compile Include="OdbierzMaterialZProdukcji.Designer.cs">
       <DependentUpon>OdbierzMaterialZProdukcji.cs</DependentUpon>
     </Compile>
+    <Compile Include="OdbiorZProdukcji.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OdbiorZProdukcji.Designer.cs">
+      <DependentUpon>OdbiorZProdukcji.cs</DependentUpon>
+    </Compile>
     <Compile Include="Odbior_Dostarczenia.cs">
       <DependentUpon>Szwalnia.tt</DependentUpon>
     </Compile>
